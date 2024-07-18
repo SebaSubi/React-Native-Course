@@ -1,8 +1,16 @@
 import React from "react";
-import { Text, View } from 'react-native';
+import { Platform, Text, View } from 'react-native';
 import RepositoryList from "./RepositoryList";
 import AppBar from "./AppBar";
 import { Routes, redirect, Route } from "react-router-native";
+import LogInPage from "../pages/LogIn";
+
+// const AppBar = Platform.select({
+//   ios: () => require('./IOSAppBar').default,
+//   default: () => require('./AppBar').default
+// })() 
+// This is a good method if you are loading external libraries for different platforms, for example. But not the best
+// when you are the one building these components.
 
 const Main = () => {
   return (
@@ -10,8 +18,7 @@ const Main = () => {
       <AppBar />
       <Routes>
         <Route path="/" element={<RepositoryList />} />
-        <Route path="/signin" element={<Text>Working on it</Text>} />
-
+        <Route path="/signin" element={<LogInPage />} />
       </Routes>
     </View>
   );
