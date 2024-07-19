@@ -9,6 +9,8 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@apollo/client": "^3.10.8",
+    "apollo-boost": "^0.4.9",
     "babel-eslint": "^10.1.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-config-standard-jsx": "^11.0.0",
@@ -20,9 +22,11 @@
     "expo": "~51.0.20",
     "expo-status-bar": "~1.12.1",
     "formik": "^2.4.6",
+    "graphql": "^15.9.0",
     "react": "18.2.0",
     "react-native": "^0.74.3",
-    "react-router-native": "^6.25.0"
+    "react-router-native": "^6.25.0",
+    "yup": "^1.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"

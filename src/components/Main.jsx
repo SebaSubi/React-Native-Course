@@ -5,6 +5,7 @@ import AppBar from "./AppBar";
 import { Routes, redirect, Route } from "react-router-native";
 import LogInPage from "../pages/LogIn";
 
+
 // const AppBar = Platform.select({
 //   ios: () => require('./IOSAppBar').default,
 //   default: () => require('./AppBar').default
